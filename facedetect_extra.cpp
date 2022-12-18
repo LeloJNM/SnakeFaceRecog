@@ -8,6 +8,9 @@
 #include <Windows.h>
 #include <Mmsystem.h>
 #include <time.h>
+#include <fstream>
+#include <vector>
+#include <locale>
 
 using namespace std;
 using namespace cv;
@@ -26,6 +29,8 @@ int pontuacao = 0;
 
 int main( int argc, const char** argv )
 {
+    setlocale(LC_ALL, "portuguese");
+    
     srand((unsigned)time(NULL));
 
     VideoCapture capture;
@@ -69,6 +74,52 @@ int main( int argc, const char** argv )
             if( c == 27 || c == 'q' || c == 'Q' )
                 break;
         }
+    }
+        int getOption();
+
+    enum Options
+    {
+        JOGAR = 1,
+        VERPONTUACAO,
+        EXIT
+    };
+
+    int options = Options::JOGAR;
+
+    while(options != EXIT)
+    {
+        options = getOption();
+        system("cls");
+        switch (options)
+        {
+        case JOGAR:
+            cout << "Begin" << endl;
+            //Função para começar o jogo
+        case VERPONTUACAO:
+            cout << "Exibindo os records de pontuação" << endl;
+            //Função para exibir as pontuações
+        default:
+            //SALVAR PONTUAÇÃO NO ARQUIVO
+            break;
+        }
+            //FIM DO WHILE
+    }
+
+
+    int getOption();
+    {
+        int in;
+        cout << "           Bem vindo ao SnakeHead" << endl;
+        cout << "--------------------------------------------" << endl;
+        cout << "               1 - Jogar" << endl;
+        cout << "               2 - Ver pontuação" << endl;
+        cout << "               3 - Sair" << endl;
+        cout << "--------------------------------------------" << endl;
+        cout << "Selecione uma opção [1-3]:" << endl;
+        cin >> in;
+        cin.ignore();
+
+        return in;
     }
 
     return 0;
@@ -143,7 +194,7 @@ void detectAndDraw( Mat& img, CascadeClassifier& cascade, double scale, bool try
             comidaAtual = comidas[rand() % 4];
             pontuacao++;
             //system("start powershell -nologo -command (New-Object Media.SoundPlayer \"C:\\Users\\Pc\\Desktop\\orange\\build\\boom.wav\").PlaySync()&");
-            PlaySound("boom.wav",NULL, SND_ASYNC);
+            PlaySound(TEXT("boom.wav"),NULL, SND_ASYNC);
         }
         
     }
@@ -160,8 +211,53 @@ void detectAndDraw( Mat& img, CascadeClassifier& cascade, double scale, bool try
     // Desenha um texto
     color = Scalar(0,0,255);
     putText	(img, "Placar:" + to_string(pontuacao), Point(300, 50), FONT_HERSHEY_PLAIN, 2, color); // fonte
-
-    // Desenha o frame na tela
-    imshow( "result", img );
-}
     
+    // Desenha o frame na tela
+        imshow( "result", img );
+    }
+
+    //Timer
+    #include <iomanip>
+    #include <iostream>
+    #include <stdlib.h>
+    #include <unistd.h>
+    using namespace std;
+
+    // hours, minutes, seconds of timer
+    int seconds = 9;
+    
+    // function to display the timer
+    void displayClock(){
+      // system call to clear the screen
+        system("clear");
+    
+        cout << "         TIMER         \n";
+        cout << " --------------------------\n";
+        cout << seconds << endl;
+    };
+    
+    void timer() {
+        while (true) {
+            displayClock();
+            sleep(1); // sleep system call to sleep
+    
+            // increment seconds
+            seconds--;
+    
+            // Mostra o ultimo segundo como zero
+            if (seconds == -1) {
+            break;
+            }
+        }
+    }
+    
+    
+    // Driver Code
+    /**int main() {
+        color = Scalar(0,255,0);
+        putText	(img, "Timer:  " + to_string(timer), Point(445, 50), FONT_HERSHEY_PLAIN, 2, color); 
+        imshow( "timer", img );
+        timer();
+        return 0;
+    } **/
+        

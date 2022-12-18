@@ -2,6 +2,8 @@
 #include <string>
 #include <random>
 #include <cmath>
+#include <windows.h>
+#include <Mmsystem.h>
 #include "DetectarRosto.h" 
 
 using namespace std;

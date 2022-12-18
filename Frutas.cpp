@@ -2,7 +2,6 @@
 #include <string>
 #include "DetectarRosto.h"
 #include "Frutas.h"
-#include <
 
 using namespace std; 
 
@@ -39,11 +38,13 @@ int Frutas::getPosicaoY() {
 void Frutas::DetectarColisao() { 
      float distanciaDosPontos = sqrt(pow(faces[0].x - posicaoX,2) + pow(faces[0].y - posicaoY,2));
      if (distanciaDosPontos < 250){
-            posicaoX = rand() % 840;
-            posicaoY = rand() % 600;
-            frutaAtual = frutas[rand() % 4];
+            setPosicaoX(rand() % 840);
+            setPosicaoY(rand() % 600);
+            setFruta(frutas[rand() % 4]);
+            PlaySound(TEXT("boom.wav"),NULL, SND_ASYNC);
+
             //system("start powershell -nologo -command (New-Object Media.SoundPlayer \"C:\\Users\\Pc\\Desktop\\orange\\build\\boom.wav\").PlaySync()&");
-//            PlaySound("boom.wav",NULL, SND_ASYNC);
+//            
 
     }
 }

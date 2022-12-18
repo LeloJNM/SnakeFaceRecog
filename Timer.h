@@ -13,11 +13,14 @@ class Timer {
     
     public:
         Timer();
-        void setTimeout(int function, int delay);
-        void setInterval(int function, int interval);
+        int getTimeout(int func, int del);
+        int getInterval(int func, int interv);
+        void setTimeout(int func, int del);
+        void setInterval(int func, int interv);
         void stop();
 
     protected:
         int function;
         int delay;
+        int interval;
 };

@@ -1,6 +1,7 @@
 {
     "cmake.generator": "MinGW Makefiles",
     "files.associations": {
-        "condition_variable": "cpp"
+        "condition_variable": "cpp",
+        "vector": "cpp"
     },
 }

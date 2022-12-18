@@ -13,3 +13,11 @@ void Timer::setTimeout(auto function, int delay) {
     });
     t.detach();
 }
+
+void Timer::setInterval(int function, int interval){
+
+}
+
+void Timer::stop(){
+
+}

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/Pc/Desktop/orange/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/ProjetoLP1.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\ProjetoLP1.dir\\facedetect_extra.cpp.obj -c C:\\Users\\Pc\\Desktop\\orange\\facedetect_extra.cpp",
+  "file": "C:/Users/Pc/Desktop/orange/facedetect_extra.cpp"
+}
+]

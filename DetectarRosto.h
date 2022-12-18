@@ -6,6 +6,9 @@
 #include "opencv2/videoio.hpp"
 #include "Pontuacao.h"
 #include "Frutas.h"
+#include <windows.h>
+#include <Mmsystem.h> 
+
 
 using namespace cv;
 using namespace std;
@@ -18,7 +21,6 @@ public:
     void detectAndDraw(Mat& img, CascadeClassifier& cascade, double scale, bool tryflip);
     void verificaSeTemRostoEAtualizaPontuacao(vector<Rect> faces);
     void drawTransparency(Mat frame, Mat transp, int xPos, int yPos);
-
 private:
     vector<cv::Rect> faces;
     cv::Mat gray, smallImg;

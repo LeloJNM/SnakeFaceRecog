@@ -1,4 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.obj"
+  "CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.obj.d"
+  "CMakeFiles/ProjetoLP1.dir/Frutas.cpp.obj"
+  "CMakeFiles/ProjetoLP1.dir/Frutas.cpp.obj.d"
+  "CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.obj"
+  "CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.obj.d"
+  "CMakeFiles/ProjetoLP1.dir/Timer.cpp.obj"
+  "CMakeFiles/ProjetoLP1.dir/Timer.cpp.obj.d"
   "CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.obj"
   "CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.obj.d"
   "ProjetoLP1.exe"

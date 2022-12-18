@@ -291,7 +291,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ProjetoLP1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ProjetoLP1-Debug-d9ddcf9b4df911425d93.json",
+					"jsonFile" : "target-ProjetoLP1-Debug-c1613368be8ba852c238.json",
 					"name" : "ProjetoLP1",
 					"projectIndex" : 0
 				}
@@ -301,8 +301,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Pc/Desktop/orange/build",
-		"source" : "C:/Users/Pc/Desktop/orange"
+		"build" : "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/build",
+		"source" : "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog"
 	},
 	"version" : 
 	{

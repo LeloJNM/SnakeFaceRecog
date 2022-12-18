@@ -2,6 +2,12 @@
 #include <string>
 #include <windows.h>
 #include <thread>
+#include <cmath>
+#include <Mmsystem.h>
+#include <iomanip>
+#include <stdlib.h>
+#include <unistd.h>
+#include "Pontuacao.h"
 
 using namespace std;
 
@@ -10,17 +16,11 @@ using namespace std;
 class Timer { 
 
     bool clear = false;
-    
+
     public:
         Timer();
-        int getTimeout(int func, int del);
-        int getInterval(int func, int interv);
-        void setTimeout(int func, int del);
-        void setInterval(int func, int interv);
-        void stop();
-
-    protected:
-        int function;
-        int delay;
-        int interval;
-};
+        void displayClock();
+        void timer();
+        int seconds = 59;
+        Pontuacao pontuacao;
+    };

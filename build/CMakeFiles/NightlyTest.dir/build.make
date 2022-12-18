@@ -52,10 +52,10 @@ RM = C:\msys64\mingw64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Pc\Desktop\orange
+CMAKE_SOURCE_DIR = C:\Users\Pc\Documents\GitHub\SnakeFaceRecog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Pc\Desktop\orange\build
+CMAKE_BINARY_DIR = C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build
 
 # Utility rule file for NightlyTest.
 
@@ -81,6 +81,6 @@ CMakeFiles/NightlyTest.dir/clean:
 .PHONY : CMakeFiles/NightlyTest.dir/clean
 
 CMakeFiles/NightlyTest.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Pc\Desktop\orange C:\Users\Pc\Desktop\orange C:\Users\Pc\Desktop\orange\build C:\Users\Pc\Desktop\orange\build C:\Users\Pc\Desktop\orange\build\CMakeFiles\NightlyTest.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Pc\Documents\GitHub\SnakeFaceRecog C:\Users\Pc\Documents\GitHub\SnakeFaceRecog C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build\CMakeFiles\NightlyTest.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NightlyTest.dir/depend
 

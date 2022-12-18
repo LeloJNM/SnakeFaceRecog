@@ -52,10 +52,10 @@ RM = C:\msys64\mingw64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Pc\Desktop\orange
+CMAKE_SOURCE_DIR = C:\Users\Pc\Documents\GitHub\SnakeFaceRecog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Pc\Desktop\orange\build
+CMAKE_BINARY_DIR = C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ProjetoLP1.dir/depend.make
@@ -70,27 +70,95 @@ include CMakeFiles/ProjetoLP1.dir/flags.make
 
 CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.obj: CMakeFiles/ProjetoLP1.dir/flags.make
 CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.obj: CMakeFiles/ProjetoLP1.dir/includes_CXX.rsp
-CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.obj: C:/Users/Pc/Desktop/orange/facedetect_extra.cpp
+CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.obj: C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/facedetect_extra.cpp
 CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.obj: CMakeFiles/ProjetoLP1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Pc\Desktop\orange\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.obj -MF CMakeFiles\ProjetoLP1.dir\facedetect_extra.cpp.obj.d -o CMakeFiles\ProjetoLP1.dir\facedetect_extra.cpp.obj -c C:\Users\Pc\Desktop\orange\facedetect_extra.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.obj -MF CMakeFiles\ProjetoLP1.dir\facedetect_extra.cpp.obj.d -o CMakeFiles\ProjetoLP1.dir\facedetect_extra.cpp.obj -c C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\facedetect_extra.cpp
 
 CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Pc\Desktop\orange\facedetect_extra.cpp > CMakeFiles\ProjetoLP1.dir\facedetect_extra.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\facedetect_extra.cpp > CMakeFiles\ProjetoLP1.dir\facedetect_extra.cpp.i
 
 CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Pc\Desktop\orange\facedetect_extra.cpp -o CMakeFiles\ProjetoLP1.dir\facedetect_extra.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\facedetect_extra.cpp -o CMakeFiles\ProjetoLP1.dir\facedetect_extra.cpp.s
+
+CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.obj: CMakeFiles/ProjetoLP1.dir/flags.make
+CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.obj: CMakeFiles/ProjetoLP1.dir/includes_CXX.rsp
+CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.obj: C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/DetectarRosto.cpp
+CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.obj: CMakeFiles/ProjetoLP1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.obj -MF CMakeFiles\ProjetoLP1.dir\DetectarRosto.cpp.obj.d -o CMakeFiles\ProjetoLP1.dir\DetectarRosto.cpp.obj -c C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\DetectarRosto.cpp
+
+CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\DetectarRosto.cpp > CMakeFiles\ProjetoLP1.dir\DetectarRosto.cpp.i
+
+CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\DetectarRosto.cpp -o CMakeFiles\ProjetoLP1.dir\DetectarRosto.cpp.s
+
+CMakeFiles/ProjetoLP1.dir/Frutas.cpp.obj: CMakeFiles/ProjetoLP1.dir/flags.make
+CMakeFiles/ProjetoLP1.dir/Frutas.cpp.obj: CMakeFiles/ProjetoLP1.dir/includes_CXX.rsp
+CMakeFiles/ProjetoLP1.dir/Frutas.cpp.obj: C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/Frutas.cpp
+CMakeFiles/ProjetoLP1.dir/Frutas.cpp.obj: CMakeFiles/ProjetoLP1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ProjetoLP1.dir/Frutas.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetoLP1.dir/Frutas.cpp.obj -MF CMakeFiles\ProjetoLP1.dir\Frutas.cpp.obj.d -o CMakeFiles\ProjetoLP1.dir\Frutas.cpp.obj -c C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\Frutas.cpp
+
+CMakeFiles/ProjetoLP1.dir/Frutas.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjetoLP1.dir/Frutas.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\Frutas.cpp > CMakeFiles\ProjetoLP1.dir\Frutas.cpp.i
+
+CMakeFiles/ProjetoLP1.dir/Frutas.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjetoLP1.dir/Frutas.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\Frutas.cpp -o CMakeFiles\ProjetoLP1.dir\Frutas.cpp.s
+
+CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.obj: CMakeFiles/ProjetoLP1.dir/flags.make
+CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.obj: CMakeFiles/ProjetoLP1.dir/includes_CXX.rsp
+CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.obj: C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/Pontuacao.cpp
+CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.obj: CMakeFiles/ProjetoLP1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.obj -MF CMakeFiles\ProjetoLP1.dir\Pontuacao.cpp.obj.d -o CMakeFiles\ProjetoLP1.dir\Pontuacao.cpp.obj -c C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\Pontuacao.cpp
+
+CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\Pontuacao.cpp > CMakeFiles\ProjetoLP1.dir\Pontuacao.cpp.i
+
+CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\Pontuacao.cpp -o CMakeFiles\ProjetoLP1.dir\Pontuacao.cpp.s
+
+CMakeFiles/ProjetoLP1.dir/Timer.cpp.obj: CMakeFiles/ProjetoLP1.dir/flags.make
+CMakeFiles/ProjetoLP1.dir/Timer.cpp.obj: CMakeFiles/ProjetoLP1.dir/includes_CXX.rsp
+CMakeFiles/ProjetoLP1.dir/Timer.cpp.obj: C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/Timer.cpp
+CMakeFiles/ProjetoLP1.dir/Timer.cpp.obj: CMakeFiles/ProjetoLP1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ProjetoLP1.dir/Timer.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetoLP1.dir/Timer.cpp.obj -MF CMakeFiles\ProjetoLP1.dir\Timer.cpp.obj.d -o CMakeFiles\ProjetoLP1.dir\Timer.cpp.obj -c C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\Timer.cpp
+
+CMakeFiles/ProjetoLP1.dir/Timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjetoLP1.dir/Timer.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\Timer.cpp > CMakeFiles\ProjetoLP1.dir\Timer.cpp.i
+
+CMakeFiles/ProjetoLP1.dir/Timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjetoLP1.dir/Timer.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\Timer.cpp -o CMakeFiles\ProjetoLP1.dir\Timer.cpp.s
 
 # Object files for target ProjetoLP1
 ProjetoLP1_OBJECTS = \
-"CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.obj"
+"CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.obj" \
+"CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.obj" \
+"CMakeFiles/ProjetoLP1.dir/Frutas.cpp.obj" \
+"CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.obj" \
+"CMakeFiles/ProjetoLP1.dir/Timer.cpp.obj"
 
 # External object files for target ProjetoLP1
 ProjetoLP1_EXTERNAL_OBJECTS =
 
 ProjetoLP1.exe: CMakeFiles/ProjetoLP1.dir/facedetect_extra.cpp.obj
+ProjetoLP1.exe: CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.obj
+ProjetoLP1.exe: CMakeFiles/ProjetoLP1.dir/Frutas.cpp.obj
+ProjetoLP1.exe: CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.obj
+ProjetoLP1.exe: CMakeFiles/ProjetoLP1.dir/Timer.cpp.obj
 ProjetoLP1.exe: CMakeFiles/ProjetoLP1.dir/build.make
 ProjetoLP1.exe: C:/msys64/mingw64/lib/libopencv_gapi.dll.a
 ProjetoLP1.exe: C:/msys64/mingw64/lib/libopencv_stitching.dll.a
@@ -153,7 +221,7 @@ ProjetoLP1.exe: C:/msys64/mingw64/lib/libopencv_core.dll.a
 ProjetoLP1.exe: CMakeFiles/ProjetoLP1.dir/linkLibs.rsp
 ProjetoLP1.exe: CMakeFiles/ProjetoLP1.dir/objects1
 ProjetoLP1.exe: CMakeFiles/ProjetoLP1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Pc\Desktop\orange\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ProjetoLP1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ProjetoLP1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ProjetoLP1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -165,6 +233,6 @@ CMakeFiles/ProjetoLP1.dir/clean:
 .PHONY : CMakeFiles/ProjetoLP1.dir/clean
 
 CMakeFiles/ProjetoLP1.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Pc\Desktop\orange C:\Users\Pc\Desktop\orange C:\Users\Pc\Desktop\orange\build C:\Users\Pc\Desktop\orange\build C:\Users\Pc\Desktop\orange\build\CMakeFiles\ProjetoLP1.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Pc\Documents\GitHub\SnakeFaceRecog C:\Users\Pc\Documents\GitHub\SnakeFaceRecog C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build\CMakeFiles\ProjetoLP1.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ProjetoLP1.dir/depend
 

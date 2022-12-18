@@ -1,26 +1,45 @@
 #include "Pontuacao.h"
+#include <iostream>
 
-Pontuacao::Pontuacao()
-{
+//using namespace std;
 
+Pontuacao::Pontuacao() {
 }
 
-Pontuacao::~Pontuacao()
-{
-
+Pontuacao::~Pontuacao() {
 }
 
-void Pontuacao::setPontuacao(int pontuacao)
-{
+void Pontuacao::setPontuacao(int pontuacao) {
     this->pontuacao = pontuacao;
 }
 
-int Pontuacao::getPontuacao()
-{
+int Pontuacao::getPontuacao() {
     return pontuacao;
 }
 
-void Pontuacao::adicionaPontuacao(int adicao)
-{
+void Pontuacao::adicionaPontuacao(int adicao) {
     pontuacao += adicao;
+}
+
+void Pontuacao::salvarPontuacaoEmArquivo(){
+    if (lerPontuacaoDoArquivo() < pontuacao){
+        std::ofstream arquivoDePontuacao;
+        arquivoDePontuacao.open("RECORDS.txt");
+        arquivoDePontuacao << pontuacao;
+        arquivoDePontuacao.close();
+    }
+}
+
+int Pontuacao::lerPontuacaoDoArquivo(){
+    std::string maiorPontuacaoBuffer;
+    int maiorPontuacao;
+    std::ifstream RECORDS("RECORDS.txt");
+    std::getline(RECORDS, maiorPontuacaoBuffer);
+    maiorPontuacao = std::stoi(maiorPontuacaoBuffer);
+    RECORDS.close();
+    return maiorPontuacao;
+}
+
+std::string Pontuacao::to_String(){
+    std::cout << pontuacao;
 }

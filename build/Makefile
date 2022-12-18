@@ -56,10 +56,10 @@ RM = C:\msys64\mingw64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Pc\Desktop\orange
+CMAKE_SOURCE_DIR = C:\Users\Pc\Documents\GitHub\SnakeFaceRecog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Pc\Desktop\orange\build
+CMAKE_BINARY_DIR = C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,7 +77,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	C:\msys64\mingw64\bin\cpack.exe --config ./CPackSourceConfig.cmake C:/Users/Pc/Desktop/orange/build/CPackSourceConfig.cmake
+	C:\msys64\mingw64\bin\cpack.exe --config ./CPackSourceConfig.cmake C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -116,9 +116,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Pc\Desktop\orange\build\CMakeFiles C:\Users\Pc\Desktop\orange\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build\CMakeFiles C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Pc\Desktop\orange\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Pc\Documents\GitHub\SnakeFaceRecog\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -522,6 +522,102 @@ ProjetoLP1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP1.dir\build.make CMakeFiles/ProjetoLP1.dir/build
 .PHONY : ProjetoLP1/fast
 
+DetectarRosto.obj: DetectarRosto.cpp.obj
+.PHONY : DetectarRosto.obj
+
+# target to build an object file
+DetectarRosto.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP1.dir\build.make CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.obj
+.PHONY : DetectarRosto.cpp.obj
+
+DetectarRosto.i: DetectarRosto.cpp.i
+.PHONY : DetectarRosto.i
+
+# target to preprocess a source file
+DetectarRosto.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP1.dir\build.make CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.i
+.PHONY : DetectarRosto.cpp.i
+
+DetectarRosto.s: DetectarRosto.cpp.s
+.PHONY : DetectarRosto.s
+
+# target to generate assembly for a file
+DetectarRosto.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP1.dir\build.make CMakeFiles/ProjetoLP1.dir/DetectarRosto.cpp.s
+.PHONY : DetectarRosto.cpp.s
+
+Frutas.obj: Frutas.cpp.obj
+.PHONY : Frutas.obj
+
+# target to build an object file
+Frutas.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP1.dir\build.make CMakeFiles/ProjetoLP1.dir/Frutas.cpp.obj
+.PHONY : Frutas.cpp.obj
+
+Frutas.i: Frutas.cpp.i
+.PHONY : Frutas.i
+
+# target to preprocess a source file
+Frutas.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP1.dir\build.make CMakeFiles/ProjetoLP1.dir/Frutas.cpp.i
+.PHONY : Frutas.cpp.i
+
+Frutas.s: Frutas.cpp.s
+.PHONY : Frutas.s
+
+# target to generate assembly for a file
+Frutas.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP1.dir\build.make CMakeFiles/ProjetoLP1.dir/Frutas.cpp.s
+.PHONY : Frutas.cpp.s
+
+Pontuacao.obj: Pontuacao.cpp.obj
+.PHONY : Pontuacao.obj
+
+# target to build an object file
+Pontuacao.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP1.dir\build.make CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.obj
+.PHONY : Pontuacao.cpp.obj
+
+Pontuacao.i: Pontuacao.cpp.i
+.PHONY : Pontuacao.i
+
+# target to preprocess a source file
+Pontuacao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP1.dir\build.make CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.i
+.PHONY : Pontuacao.cpp.i
+
+Pontuacao.s: Pontuacao.cpp.s
+.PHONY : Pontuacao.s
+
+# target to generate assembly for a file
+Pontuacao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP1.dir\build.make CMakeFiles/ProjetoLP1.dir/Pontuacao.cpp.s
+.PHONY : Pontuacao.cpp.s
+
+Timer.obj: Timer.cpp.obj
+.PHONY : Timer.obj
+
+# target to build an object file
+Timer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP1.dir\build.make CMakeFiles/ProjetoLP1.dir/Timer.cpp.obj
+.PHONY : Timer.cpp.obj
+
+Timer.i: Timer.cpp.i
+.PHONY : Timer.i
+
+# target to preprocess a source file
+Timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP1.dir\build.make CMakeFiles/ProjetoLP1.dir/Timer.cpp.i
+.PHONY : Timer.cpp.i
+
+Timer.s: Timer.cpp.s
+.PHONY : Timer.s
+
+# target to generate assembly for a file
+Timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoLP1.dir\build.make CMakeFiles/ProjetoLP1.dir/Timer.cpp.s
+.PHONY : Timer.cpp.s
+
 facedetect_extra.obj: facedetect_extra.cpp.obj
 .PHONY : facedetect_extra.obj
 
@@ -586,6 +682,18 @@ help:
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
 	@echo ... ProjetoLP1
+	@echo ... DetectarRosto.obj
+	@echo ... DetectarRosto.i
+	@echo ... DetectarRosto.s
+	@echo ... Frutas.obj
+	@echo ... Frutas.i
+	@echo ... Frutas.s
+	@echo ... Pontuacao.obj
+	@echo ... Pontuacao.i
+	@echo ... Pontuacao.s
+	@echo ... Timer.obj
+	@echo ... Timer.i
+	@echo ... Timer.s
 	@echo ... facedetect_extra.obj
 	@echo ... facedetect_extra.i
 	@echo ... facedetect_extra.s

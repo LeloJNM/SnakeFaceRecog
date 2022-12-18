@@ -2,9 +2,7 @@
 #include <string>
 #include <random>
 #include <cmath>
-#include <windows.h>
-#include <Mmsystem.h>
-#include "DetectarRosto.h" 
+
 
 using namespace std;
 
@@ -16,17 +14,18 @@ public:
     Frutas();
     ~Frutas();
 
-    void DetectarColisao();
     void setFruta(string fruta);
     string getFruta();
+    void setFrutaAtual(string frutaAtual);
+    string getFrutaAtual();
     void setPosicaoX(int posicaoX);
     int getPosicaoX();
     void setPosicaoY(int posicaoY);
     int getPosicaoY();
+    string frutas[4] = {"banana.png", "laranja.png", "uva.png","abacaxi.png"};
 
 private:
     string fruta;
-    string frutas[4] = {"banana.png", "laranja.png", "uva.png","abacaxi.png"};
     string frutaAtual;
     int posicaoX;
     int posicaoY;

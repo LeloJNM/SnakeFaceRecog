@@ -83,7 +83,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/Pc/Desktop/orange/build"
+			"value" : "c:/Users/Pc/Documents/GitHub/SnakeFaceRecog/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -619,7 +619,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Pc/Desktop/orange/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -691,7 +691,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Pc/Desktop/orange"
+			"value" : "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1623,11 +1623,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "(This variable does not exist and should not be used)"
+					"value" : "Path to a program."
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : ""
+			"type" : "FILEPATH",
+			"value" : "C:/Program Files/Git/cmd/git.exe"
 		},
 		{
 			"name" : "HGCOMMAND",
@@ -1731,7 +1731,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Pc/Desktop/orange/build"
+			"value" : "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/build"
 		},
 		{
 			"name" : "ProjetoLP1_IS_TOP_LEVEL",
@@ -1755,7 +1755,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Pc/Desktop/orange"
+			"value" : "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog"
 		},
 		{
 			"name" : "SITE",

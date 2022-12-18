@@ -1,7 +1,27 @@
 [
 {
-  "directory": "C:/Users/Pc/Desktop/orange/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/ProjetoLP1.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\ProjetoLP1.dir\\facedetect_extra.cpp.obj -c C:\\Users\\Pc\\Desktop\\orange\\facedetect_extra.cpp",
-  "file": "C:/Users/Pc/Desktop/orange/facedetect_extra.cpp"
+  "directory": "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/ProjetoLP1.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\ProjetoLP1.dir\\facedetect_extra.cpp.obj -c C:\\Users\\Pc\\Documents\\GitHub\\SnakeFaceRecog\\facedetect_extra.cpp",
+  "file": "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/facedetect_extra.cpp"
+},
+{
+  "directory": "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/ProjetoLP1.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\ProjetoLP1.dir\\DetectarRosto.cpp.obj -c C:\\Users\\Pc\\Documents\\GitHub\\SnakeFaceRecog\\DetectarRosto.cpp",
+  "file": "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/DetectarRosto.cpp"
+},
+{
+  "directory": "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/ProjetoLP1.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\ProjetoLP1.dir\\Frutas.cpp.obj -c C:\\Users\\Pc\\Documents\\GitHub\\SnakeFaceRecog\\Frutas.cpp",
+  "file": "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/Frutas.cpp"
+},
+{
+  "directory": "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/ProjetoLP1.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\ProjetoLP1.dir\\Pontuacao.cpp.obj -c C:\\Users\\Pc\\Documents\\GitHub\\SnakeFaceRecog\\Pontuacao.cpp",
+  "file": "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/Pontuacao.cpp"
+},
+{
+  "directory": "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/ProjetoLP1.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\ProjetoLP1.dir\\Timer.cpp.obj -c C:\\Users\\Pc\\Documents\\GitHub\\SnakeFaceRecog\\Timer.cpp",
+  "file": "C:/Users/Pc/Documents/GitHub/SnakeFaceRecog/Timer.cpp"
 }
 ]

@@ -24,7 +24,7 @@ using namespace cv;
 
 string cascadeName;
 
-   
+int getOption();
 
 int main( int argc, const char** argv )
 {
@@ -66,7 +66,6 @@ int main( int argc, const char** argv )
     Pontuacao pontuacao;
     DetectarRosto rosto;
 
-    int getOption();
 
     enum Options
     {

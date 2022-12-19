@@ -61,7 +61,9 @@ void DetectarRosto::detectAndDraw(Mat &img, CascadeClassifier &cascade, double s
                   Point(cvRound((r.x + r.width - 1) * scale), cvRound((r.y + r.height - 1) * scale)),
                   color, 3);
 
+
     }
+    this->verificaSeTemRostoEAtualizaPontuacao(faces);
     Mat overlay = cv::imread(fruta.getFrutaAtual(), IMREAD_UNCHANGED);
     drawTransparency(img, overlay, fruta.getPosicaoX(), fruta.getPosicaoY());
 

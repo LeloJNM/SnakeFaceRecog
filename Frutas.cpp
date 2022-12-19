@@ -7,7 +7,10 @@ using namespace std;
 
 Frutas::Frutas() {
     frutaAtual = "banana.png";
+    this->posicaoX = (rand() % 840);
+    this->posicaoY = (rand() % 600);
 }
+
 
 Frutas::~Frutas() {
 }

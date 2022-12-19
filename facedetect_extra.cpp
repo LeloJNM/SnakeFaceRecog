@@ -101,8 +101,7 @@ int main( int argc, const char** argv )
                 break;
         }
     }
-        rosto.drawTransparency(frame, transp, xPos, yPos);
-        rosto.verificaSeTemRostoEAtualizaPontuacao(faces);
+        
 
 
         case VERPONTUACAO:

@@ -29,7 +29,7 @@ void DetectarRosto::drawTransparency(Mat frame, Mat transp, int xPos, int yPos){
 //     addWeighted(rectImg, alpha, roi, 1.0 - alpha , 0, roi);
 // }
 //desenha os quadrados nos rostos e o placar
-void DetectarRosto::detectAndDraw(Mat &img, CascadeClassifier &cascade, double scale, bool tryflip) {
+void DetectarRosto::detectAndDraw(Mat &img, CascadeClassifier &cascade, double scale, bool tryflip, Pontuacao &pontuacao) {
     double t = 0;
     vector<Rect> faces;
     Mat gray, smallImg;
@@ -53,7 +53,6 @@ void DetectarRosto::detectAndDraw(Mat &img, CascadeClassifier &cascade, double s
                                          | CASCADE_SCALE_IMAGE,
                              Size(40, 40));
     t = (double)getTickCount() - t;
-    printf("detection time = %g ms\n", t * 1000 / getTickFrequency());
     // PERCORRE AS FACES ENCONTRADAS
     for (size_t i = 0; i < faces.size(); i++){
         Rect r = faces[i];
@@ -63,7 +62,7 @@ void DetectarRosto::detectAndDraw(Mat &img, CascadeClassifier &cascade, double s
 
 
     }
-    this->verificaSeTemRostoEAtualizaPontuacao(faces);
+    this->verificaSeTemRostoEAtualizaPontuacao(faces, pontuacao);
     Mat overlay = cv::imread(fruta.getFrutaAtual(), IMREAD_UNCHANGED);
     drawTransparency(img, overlay, fruta.getPosicaoX(), fruta.getPosicaoY());
 
@@ -79,7 +78,7 @@ void DetectarRosto::detectAndDraw(Mat &img, CascadeClassifier &cascade, double s
     // Desenha o frame na tela
         imshow( "result", img );
 }
-void DetectarRosto::verificaSeTemRostoEAtualizaPontuacao(vector<Rect> faces){
+void DetectarRosto::verificaSeTemRostoEAtualizaPontuacao(vector<Rect> faces, Pontuacao &pontuacao){
     // Verifica se a comida foi pega e gerar uma nova
     if (faces.size() > 0){
         float distanciaDosPontos = sqrt(pow(faces[0].x - fruta.getPosicaoX(), 2) + pow(faces[0].y - fruta.getPosicaoY(), 2));

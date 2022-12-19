@@ -18,8 +18,8 @@ class DetectarRosto {
 public:
     DetectarRosto();
     ~DetectarRosto();
-    void detectAndDraw(Mat& img, CascadeClassifier& cascade, double scale, bool tryflip);
-    void verificaSeTemRostoEAtualizaPontuacao(vector<Rect> faces);
+    void detectAndDraw(Mat& img, CascadeClassifier& cascade, double scale, bool tryflip, Pontuacao &pontuacao);
+    void verificaSeTemRostoEAtualizaPontuacao(vector<Rect> faces, Pontuacao &pontuacao);
     void drawTransparency(Mat frame, Mat transp, int xPos, int yPos);
 private:
     vector<cv::Rect> faces;
@@ -30,6 +30,5 @@ private:
     cv::CascadeClassifier cascade;
     double scale;
     cv::Scalar color = Scalar(255,0,0);
-    Pontuacao pontuacao;
     Frutas fruta;
 };

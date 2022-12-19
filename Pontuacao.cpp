@@ -34,6 +34,9 @@ int Pontuacao::lerPontuacaoDoArquivo(){
     std::string maiorPontuacaoBuffer;
     int maiorPontuacao;
     std::ifstream RECORDS("RECORDS.txt");
+    if(!RECORDS.is_open()){
+        return 0;
+    }
     std::getline(RECORDS, maiorPontuacaoBuffer);
     maiorPontuacao = std::stoi(maiorPontuacaoBuffer);
     RECORDS.close();

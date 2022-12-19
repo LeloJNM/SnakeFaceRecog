@@ -20,7 +20,7 @@ class Timer {
     public:
         Timer();
         void displayClock();
-        void timer();
+        void timer(bool *contando);
         int seconds = 59;
         Pontuacao pontuacao;
     };

@@ -7,24 +7,26 @@
 
 using namespace std;
 
-Timer::Timer() {
+Timer::Timer()
+{
 }
 
-void Timer::displayClock(){ // A arrumar
-        
-    };
-    
-    void Timer::timer() {
-        while (true) {
-            displayClock();
-            sleep(1); // Delay proposital
-            
-            seconds--; // Faz o decremento dos segundos até zerar
-    
-            if (seconds == -1) { // Mostra o ultimo segundo como zero
-            pontuacao.salvarPontuacaoEmArquivo();
-            break;
-            }
-        }
-    };
+void Timer::timer(bool *contando)
+{
+    while (true)
+    {
+        // displayClock();
+        sleep(1); // Delay proposital
 
+        seconds--; // Faz o decremento dos segundos até zerar
+        
+        if (seconds == -1)
+        { // Mostra o ultimo segundo como zero
+            pontuacao.salvarPontuacaoEmArquivo();
+            *contando = false;
+            break;
+        }
+
+        printf("Tempo restante: %d\n", seconds);
+    }
+};

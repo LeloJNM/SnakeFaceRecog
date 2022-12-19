@@ -1,6 +1,6 @@
 #include "Pontuacao.h"
 #include <iostream>
-
+#include <string>
 //using namespace std;
 
 Pontuacao::Pontuacao() {
@@ -41,5 +41,5 @@ int Pontuacao::lerPontuacaoDoArquivo(){
 }
 
 std::string Pontuacao::to_String(){
-    std::cout << pontuacao;
+    return std::to_string(pontuacao);
 }

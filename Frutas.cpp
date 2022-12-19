@@ -6,6 +6,7 @@
 using namespace std; 
 
 Frutas::Frutas() {
+    frutaAtual = "banana.png";
 }
 
 Frutas::~Frutas() {
@@ -37,6 +38,7 @@ int Frutas::getPosicaoY() {
 
 void Frutas::setFrutaAtual(string frutaAtual) {
     this->frutaAtual = frutaAtual;
+
 }
 
 string Frutas::getFrutaAtual() {

@@ -7,7 +7,7 @@
 using namespace std;
 using namespace cv;
 
-void detectAndDraw( Mat& img, CascadeClassifier& cascade, double scale, bool tryflip);
+void detectAndDraw(Mat& img, CascadeClassifier& cascade, double scale, bool tryflip);
 
 string cascadeName;
 

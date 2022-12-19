@@ -24,6 +24,7 @@ using namespace cv;
 
 string cascadeName;
 
+   
 
 int main( int argc, const char** argv )
 {
@@ -54,7 +55,7 @@ int main( int argc, const char** argv )
         return -1;
     }
 
-//    if(!capture.open("video.mp4")) // para testar com um video
+    //    if(!capture.open("video.mp4")) // para testar com um video
     if(!capture.open(0))
     {
         cout << "Capture from camera #0 didn't work" << endl;
@@ -65,7 +66,7 @@ int main( int argc, const char** argv )
     Pontuacao pontuacao;
     DetectarRosto rosto;
 
-    int getOption;
+    int getOption();
 
     enum Options
     {
@@ -78,7 +79,7 @@ int main( int argc, const char** argv )
 
     while(options != EXIT)
     {
-        options = getOption;
+        options = getOption();
         system("cls");
         switch (options)
         {
@@ -115,7 +116,20 @@ int main( int argc, const char** argv )
             //FIM DO WHILE
     }
 
-    {
+
+
+/**
+ * @brief Draws a transparent image over a frame Mat.
+ * 
+ * @param frame the frame where the transparent image will be drawn
+ * @param transp the Mat image with transparency, read from a PNG image, with the IMREAD_UNCHANGED flag
+ * @param xPos x position of the frame image where the image will start.
+ * @param yPos y position of the frame image where the image will start.
+ */
+}
+
+int getOption()
+{
         int in;
         cout << "           Bem vindo ao SnakeHead" << endl;
         cout << "--------------------------------------------" << endl;
@@ -128,16 +142,4 @@ int main( int argc, const char** argv )
         cin.ignore();
 
         return in;
-    }
-
-    return 0;
-}
-
-/**
- * @brief Draws a transparent image over a frame Mat.
- * 
- * @param frame the frame where the transparent image will be drawn
- * @param transp the Mat image with transparency, read from a PNG image, with the IMREAD_UNCHANGED flag
- * @param xPos x position of the frame image where the image will start.
- * @param yPos y position of the frame image where the image will start.
- */
+        }

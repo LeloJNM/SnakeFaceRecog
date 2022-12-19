@@ -11,11 +11,7 @@ Timer::Timer() {
 }
 
 void Timer::displayClock(){ // A arrumar
-        /**system("clear"); // Limpa a tela
-    
-        cout << "         TIMER         \n";
-        cout << " --------------------------\n";
-        cout << seconds << endl;**/
+        
     };
     
     void Timer::timer() {
